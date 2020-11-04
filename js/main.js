@@ -11,7 +11,7 @@ function toggleMenu() {
 
         showMenu = true;
     } else {
-        hamburger.classList.remove('open');
+      hamburger.classList.remove('open');
 
         showMenu = false;
     }
