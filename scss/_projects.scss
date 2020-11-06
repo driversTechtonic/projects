@@ -57,6 +57,9 @@
                 top: 0;
                 opacity: 0.8;
             }
+            .projects__btn {
+                opacity: 1;
+            }
         }
     }
 
@@ -70,6 +73,16 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: center;
+    }
+
+    &__btn {
+        opacity: 0;
+        color: set-text-color($secondary-color);
+        @include transition-ease;
+
+        &:hover {
+            color: set-text-color(set-text-color($secondary-color));
+        }
     }
 
 
